@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Insights Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Global Insights Map</h1>
+            <p>Visualize your geographical data with precision and style.</p>
+        </header>
+
+        <div class="upload-card">
+            <form method="POST" enctype="multipart/form-data" class="upload-form">
+                <div class="file-input-wrapper">
+                    <label for="file" class="file-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            style="margin-bottom: 1rem; opacity: 0.7;">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <span>Click to Upload Excel File</span>
+                        <input type="file" id="file" name="file" accept=".xlsx" required>
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Generate Map</button>
+            </form>
+        </div>
+
+        {% if stats %}
+        <div
+            style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: 1rem; width: 100%; max-width: 800px;">
+            <h3 style="margin-top: 0;">Processing Status</h3>
+            <div style="display: flex; gap: 2rem; margin-bottom: 1rem;">
+                <div style="color: #059669; font-weight: 600;">
+                    ✓ Exact Location: {{ stats.success }}
+                </div>
+                <div style="color: #d97706; font-weight: 600;">
+                    ⚠ Approximate (District): {{ stats.partial }}
+                </div>
+                <div style="color: #dc2626; font-weight: 600;">
+                    ✕ Failed: {{ stats.failed }}
+                </div>
+            </div>
+
+            {% if stats.failed > 0 %}
+            <div style="background: #fef2f2; padding: 1rem; border-radius: 8px; border: 1px solid #fee2e2;">
+                <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; font-weight: 500;">Villages not found (Try using
+                    English names or simplified format):</p>
+                <div style="max-height: 100px; overflow-y: auto; font-size: 0.85rem; color: #b91c1c;">
+                    {% for item in stats.failed_list %}
+                    <span
+                        style="display: inline-block; background: #fff; padding: 2px 6px; border-radius: 4px; border: 1px solid #fca5a5; margin: 2px;">{{
+                        item }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if map_html %}
+        <div class="map-card">
+            <div class="map-container">
+                <iframe src="{{ map_html }}"></iframe>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <script>
+        // Simple script to show selected filename
+        document.getElementById('file').addEventListener('change', function (e) {
+            const fileName = e.target.files[0]?.name;
+            if (fileName) {
+                this.parentElement.querySelector('span').textContent = fileName;
+            }
+        });
+    </script>
+</body>
+
+</html>

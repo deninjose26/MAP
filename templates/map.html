@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_90963de63524adbcf0a42a14563fa5f6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_90963de63524adbcf0a42a14563fa5f6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_90963de63524adbcf0a42a14563fa5f6 = L.map(
+                "map_90963de63524adbcf0a42a14563fa5f6",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6d49051ef5067a25237c43935129ceb2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6d49051ef5067a25237c43935129ceb2.addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var marker_80d800400ccffce34156a04b6ee13358 = L.marker(
+                [26.23592, 79.052392],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_9bae736f817ca0b7eeb0104bc6a1c69a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_982726f8232fbc1371cbbcf8ee265b66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04cca2a8f42d5e1557921a3fbcb221ab = $(`<div id="html_04cca2a8f42d5e1557921a3fbcb221ab" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: red">असनेहट</h4>                             <b>Families:</b> 18<br>                             <b>Type:</b> Origin                                                      </div>                         </div>`)[0];
+                popup_982726f8232fbc1371cbbcf8ee265b66.setContent(html_04cca2a8f42d5e1557921a3fbcb221ab);
+            
+        
+
+        marker_80d800400ccffce34156a04b6ee13358.bindPopup(popup_982726f8232fbc1371cbbcf8ee265b66)
+        ;
+
+        
+    
+    
+            marker_80d800400ccffce34156a04b6ee13358.bindTooltip(
+                `<div>
+                     असनेहट (13)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80d800400ccffce34156a04b6ee13358.setIcon(icon_9bae736f817ca0b7eeb0104bc6a1c69a);
+            
+    
+            var marker_75c07743fecb854c5b80e88e6b3df3e7 = L.marker(
+                [26.217211, 78.84435],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_9545f86b75cc169bb463857a61df239c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_946b7f1288fd18399c97a6df0412f7f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d4dfab76806a1cd8a0fc0c336766974 = $(`<div id="html_4d4dfab76806a1cd8a0fc0c336766974" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">अजनार</h4>                             <b>Families:</b> 10<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_946b7f1288fd18399c97a6df0412f7f3.setContent(html_4d4dfab76806a1cd8a0fc0c336766974);
+            
+        
+
+        marker_75c07743fecb854c5b80e88e6b3df3e7.bindPopup(popup_946b7f1288fd18399c97a6df0412f7f3)
+        ;
+
+        
+    
+    
+            marker_75c07743fecb854c5b80e88e6b3df3e7.bindTooltip(
+                `<div>
+                     अजनार (10)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75c07743fecb854c5b80e88e6b3df3e7.setIcon(icon_9545f86b75cc169bb463857a61df239c);
+            
+    
+            var marker_ed811ad3af7c4c120e120b385377900a = L.marker(
+                [22.874877, 81.56908],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_2306181eb3c9ed828e3513e17591023e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4087a802e902d7ff288009367bf373ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_633eaa9b907242ac2aa057bca266c992 = $(`<div id="html_633eaa9b907242ac2aa057bca266c992" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">इसुरी रमपुरा</h4>                             <b>Families:</b> 8<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_4087a802e902d7ff288009367bf373ec.setContent(html_633eaa9b907242ac2aa057bca266c992);
+            
+        
+
+        marker_ed811ad3af7c4c120e120b385377900a.bindPopup(popup_4087a802e902d7ff288009367bf373ec)
+        ;
+
+        
+    
+    
+            marker_ed811ad3af7c4c120e120b385377900a.bindTooltip(
+                `<div>
+                     इसुरी रमपुरा (8)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed811ad3af7c4c120e120b385377900a.setIcon(icon_2306181eb3c9ed828e3513e17591023e);
+            
+    
+            var marker_ef6ffc8f87a08d14c5ce971b3b031d37 = L.marker(
+                [24.351795, 78.516092],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_430e36cdf7addfc63860dbeafc125a38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_183d4c0ac3fec7edd0615d8a2744fee5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c19dede670cf13ab2a5c1801ee971f1d = $(`<div id="html_c19dede670cf13ab2a5c1801ee971f1d" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">उदौतपुरा</h4>                             <b>Families:</b> 6<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_183d4c0ac3fec7edd0615d8a2744fee5.setContent(html_c19dede670cf13ab2a5c1801ee971f1d);
+            
+        
+
+        marker_ef6ffc8f87a08d14c5ce971b3b031d37.bindPopup(popup_183d4c0ac3fec7edd0615d8a2744fee5)
+        ;
+
+        
+    
+    
+            marker_ef6ffc8f87a08d14c5ce971b3b031d37.bindTooltip(
+                `<div>
+                     उदौतपुरा (6)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef6ffc8f87a08d14c5ce971b3b031d37.setIcon(icon_430e36cdf7addfc63860dbeafc125a38);
+            
+    
+            var marker_233242dd511b271cbc43a736cd5c0801 = L.marker(
+                [23.261698, 77.683237],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_f27a41e698ae811e0c06deb96c0b8b79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41dfbc5a1ac684a2b9f9ac492e6346f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b2fe074e0ac5d4168cece5c0b0d5dad = $(`<div id="html_0b2fe074e0ac5d4168cece5c0b0d5dad" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">मडोरी</h4>                             <b>Families:</b> 5<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_41dfbc5a1ac684a2b9f9ac492e6346f3.setContent(html_0b2fe074e0ac5d4168cece5c0b0d5dad);
+            
+        
+
+        marker_233242dd511b271cbc43a736cd5c0801.bindPopup(popup_41dfbc5a1ac684a2b9f9ac492e6346f3)
+        ;
+
+        
+    
+    
+            marker_233242dd511b271cbc43a736cd5c0801.bindTooltip(
+                `<div>
+                     मडोरी (5)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_233242dd511b271cbc43a736cd5c0801.setIcon(icon_f27a41e698ae811e0c06deb96c0b8b79);
+            
+    
+            var marker_e588f4a057ba8cff81ab22a5a46d1a6a = L.marker(
+                [26.0026, 78.875702],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_e42b8f77c1dc361c9957516d88db2c19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_824d33c8b3aa2130f0f73eea9323c2db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52dc09f758f8bdc7e441800395104909 = $(`<div id="html_52dc09f758f8bdc7e441800395104909" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">दभोय (दबोह )</h4>                             <b>Families:</b> 3<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_824d33c8b3aa2130f0f73eea9323c2db.setContent(html_52dc09f758f8bdc7e441800395104909);
+            
+        
+
+        marker_e588f4a057ba8cff81ab22a5a46d1a6a.bindPopup(popup_824d33c8b3aa2130f0f73eea9323c2db)
+        ;
+
+        
+    
+    
+            marker_e588f4a057ba8cff81ab22a5a46d1a6a.bindTooltip(
+                `<div>
+                     दभोय (दबोह ) (3)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e588f4a057ba8cff81ab22a5a46d1a6a.setIcon(icon_e42b8f77c1dc361c9957516d88db2c19);
+            
+    
+            var marker_a873490aecada74fe71ff18f000f6db6 = L.marker(
+                [26.114307, 78.90972],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_eeaf42f9cd191756ca6a0056bd976e06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e93f7e95216517a75ab9458d50c27dbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01eb5352a08ba5ee3f84b249b52164d0 = $(`<div id="html_01eb5352a08ba5ee3f84b249b52164d0" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">अखदेवा</h4>                             <b>Families:</b> 2<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_e93f7e95216517a75ab9458d50c27dbb.setContent(html_01eb5352a08ba5ee3f84b249b52164d0);
+            
+        
+
+        marker_a873490aecada74fe71ff18f000f6db6.bindPopup(popup_e93f7e95216517a75ab9458d50c27dbb)
+        ;
+
+        
+    
+    
+            marker_a873490aecada74fe71ff18f000f6db6.bindTooltip(
+                `<div>
+                     अखदेवा (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a873490aecada74fe71ff18f000f6db6.setIcon(icon_eeaf42f9cd191756ca6a0056bd976e06);
+            
+    
+            var marker_43b98fe5afd8f367853f9f73c9bd1cdd = L.marker(
+                [26.234797, 78.852567],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_334ce784c55f99122a067d53ec54e5d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d072194ec91c24703e86de28ff67a34e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03d31e59ca5085b7216bb7c3bdc97a41 = $(`<div id="html_03d31e59ca5085b7216bb7c3bdc97a41" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">केशवगढ़</h4>                             <b>Families:</b> 4<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_d072194ec91c24703e86de28ff67a34e.setContent(html_03d31e59ca5085b7216bb7c3bdc97a41);
+            
+        
+
+        marker_43b98fe5afd8f367853f9f73c9bd1cdd.bindPopup(popup_d072194ec91c24703e86de28ff67a34e)
+        ;
+
+        
+    
+    
+            marker_43b98fe5afd8f367853f9f73c9bd1cdd.bindTooltip(
+                `<div>
+                     केशवगढ़ (4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43b98fe5afd8f367853f9f73c9bd1cdd.setIcon(icon_334ce784c55f99122a067d53ec54e5d2);
+            
+    
+            var marker_413711bd672de60fba9603bc6c15e206 = L.marker(
+                [25.860099, 78.172324],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_678738ad49dbb956730be29c654511b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05365e6bcad264ce5dfba3b5c7ee9b5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ebc82c997b3f6207961975d231c7580 = $(`<div id="html_6ebc82c997b3f6207961975d231c7580" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">देवरा</h4>                             <b>Families:</b> 2<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_05365e6bcad264ce5dfba3b5c7ee9b5b.setContent(html_6ebc82c997b3f6207961975d231c7580);
+            
+        
+
+        marker_413711bd672de60fba9603bc6c15e206.bindPopup(popup_05365e6bcad264ce5dfba3b5c7ee9b5b)
+        ;
+
+        
+    
+    
+            marker_413711bd672de60fba9603bc6c15e206.bindTooltip(
+                `<div>
+                     देवरा (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_413711bd672de60fba9603bc6c15e206.setIcon(icon_678738ad49dbb956730be29c654511b0);
+            
+    
+            var marker_daa38fc3dee65366d903b7cb37ad7f0c = L.marker(
+                [26.159976, 78.904289],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_d5e43b5ea8880ce3a254f9159ade3ded = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84484004984f0d5bc85ac5f3925145b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3059e276d9d6bea5cb5868fcc12d0860 = $(`<div id="html_3059e276d9d6bea5cb5868fcc12d0860" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">जमुहा</h4>                             <b>Families:</b> 1<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_84484004984f0d5bc85ac5f3925145b8.setContent(html_3059e276d9d6bea5cb5868fcc12d0860);
+            
+        
+
+        marker_daa38fc3dee65366d903b7cb37ad7f0c.bindPopup(popup_84484004984f0d5bc85ac5f3925145b8)
+        ;
+
+        
+    
+    
+            marker_daa38fc3dee65366d903b7cb37ad7f0c.bindTooltip(
+                `<div>
+                     जमुहा (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_daa38fc3dee65366d903b7cb37ad7f0c.setIcon(icon_d5e43b5ea8880ce3a254f9159ade3ded);
+            
+    
+            var marker_8ece36be17a246d8f054b342198b0509 = L.marker(
+                [26.1847473, 78.0775972],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_bf5a35e963abd419dc6613add57897e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d05e58a236f0550576cd2f8a72496bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f415811d43b4340b0a1252b61eae0d5b = $(`<div id="html_f415811d43b4340b0a1252b61eae0d5b" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">महाराजपुरा</h4>                             <b>Families:</b> 1<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_5d05e58a236f0550576cd2f8a72496bd.setContent(html_f415811d43b4340b0a1252b61eae0d5b);
+            
+        
+
+        marker_8ece36be17a246d8f054b342198b0509.bindPopup(popup_5d05e58a236f0550576cd2f8a72496bd)
+        ;
+
+        
+    
+    
+            marker_8ece36be17a246d8f054b342198b0509.bindTooltip(
+                `<div>
+                     महाराजपुरा (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ece36be17a246d8f054b342198b0509.setIcon(icon_bf5a35e963abd419dc6613add57897e1);
+            
+    
+            var marker_1a230615c4da6090638ee05c698c5ba3 = L.marker(
+                [21.175156, 76.274869],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_3453c4027186f502b27de2e6a230990c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4e4bfe5f1c093aaade2af0246b6d076 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11e39ff4f4c814f99de581783eaec826 = $(`<div id="html_11e39ff4f4c814f99de581783eaec826" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">मोहद्दीपुर</h4>                             <b>Families:</b> 1<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_b4e4bfe5f1c093aaade2af0246b6d076.setContent(html_11e39ff4f4c814f99de581783eaec826);
+            
+        
+
+        marker_1a230615c4da6090638ee05c698c5ba3.bindPopup(popup_b4e4bfe5f1c093aaade2af0246b6d076)
+        ;
+
+        
+    
+    
+            marker_1a230615c4da6090638ee05c698c5ba3.bindTooltip(
+                `<div>
+                     मोहद्दीपुर (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a230615c4da6090638ee05c698c5ba3.setIcon(icon_3453c4027186f502b27de2e6a230990c);
+            
+    
+            var marker_5dea06e09250870b82da997c476cbe8b = L.marker(
+                [25.448705, 76.656312],
+                {
+}
+            ).addTo(map_90963de63524adbcf0a42a14563fa5f6);
+        
+    
+            var icon_3e7a327a2c4fec196278af0550b46291 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d23e1a40e2348c67d906cf8fc52681d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82941840799e9924f3ef8a0bce72c7ec = $(`<div id="html_82941840799e9924f3ef8a0bce72c7ec" style="width: 100.0%; height: 100.0%;">                         <div style="width: 200px">                             <h4 style="margin-bottom: 5px; color: blue">स्याहीपुरा</h4>                             <b>Families:</b> 1<br>                             <b>Type:</b> Destination                                                      </div>                         </div>`)[0];
+                popup_d23e1a40e2348c67d906cf8fc52681d5.setContent(html_82941840799e9924f3ef8a0bce72c7ec);
+            
+        
+
+        marker_5dea06e09250870b82da997c476cbe8b.bindPopup(popup_d23e1a40e2348c67d906cf8fc52681d5)
+        ;
+
+        
+    
+    
+            marker_5dea06e09250870b82da997c476cbe8b.bindTooltip(
+                `<div>
+                     स्याहीपुरा (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5dea06e09250870b82da997c476cbe8b.setIcon(icon_3e7a327a2c4fec196278af0550b46291);
+            
+    
+            map_90963de63524adbcf0a42a14563fa5f6.fitBounds(
+                [[26.23592, 79.052392], [26.217211, 78.84435], [22.874877, 81.56908], [24.351795, 78.516092], [23.261698, 77.683237], [26.0026, 78.875702], [26.114307, 78.90972], [26.234797, 78.852567], [25.860099, 78.172324], [26.159976, 78.904289], [26.1847473, 78.0775972], [21.175156, 76.274869], [25.448705, 76.656312]],
+                {}
+            );
+        
+</script>
+</html>
