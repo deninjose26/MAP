@@ -12,6 +12,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 @app.route("/", methods=["GET", "POST"])
 def index():
     map_html = None
+    stats = None
 
     if request.method == "POST":
         file = request.files["file"]
@@ -150,10 +151,10 @@ def index():
         if all_points:
             m.fit_bounds(all_points)
         
-        map_path = "templates/map.html"
+        map_path = os.path.join("static", "map.html")
         m.save(map_path)
 
-        map_html = url_for('map_view')
+        map_html = url_for('static', filename='map.html')
         
         stats = {
             "success": success_count,
@@ -164,9 +165,7 @@ def index():
 
     return render_template("index.html", map_html=map_html, stats=stats)
 
-@app.route('/map')
-def map_view():
-    return render_template('map.html')
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')

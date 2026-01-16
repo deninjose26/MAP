@@ -32,3 +32,6 @@ instance/
 # Project Specific
 uploads/
 *.xlsx
+
+# Generated Files
+static/map.html
